@@ -1,5 +1,13 @@
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@use "variables" as *;
+// Custom button mixin
+@mixin custom-button($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  font-family: $font-sans;
+  font-weight: 700;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
 }

@@ -1,0 +1,43 @@
+
+// Media queries for common breakpoints
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 575.98px) { @content; }
+  }
+  @else if $breakpoint == sm {
+    @media (max-width: 767.98px) { @content; }
+  }
+  @else if $breakpoint == md {
+    @media (max-width: 991.98px) { @content; }
+  }
+  @else if $breakpoint == lg {
+    @media (max-width: 1199.98px) { @content; }
+  }
+  @else if $breakpoint == xl {
+    @media (min-width: 1200px) { @content; }
+  }
+}
+
+// Example usage for navbar responsiveness
+.navbar {
+  @include respond-to(md) {
+    flex-direction: column;
+    .navbar__menu {
+      display: none;
+    }
+    .navbar__button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+// Example usage for banner responsiveness
+.banner {
+  @include respond-to(md) {
+    text-align: left;
+    flex-direction: column-reverse;
+    .banner__actions {
+      justify-content: flex-start;
+    }
+  }
+}

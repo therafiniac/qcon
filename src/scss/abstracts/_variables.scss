@@ -1,10 +1,21 @@
-// Color Palette
-$primary-color: #301BAD;
-$secondary-color: #61B38E;
-$neutral-black: #000;
-$neutral-white: #FFF;
-$neutral-gray: #666;
+// Primary and Secondary Colors
+$color-primary: #301BAD;
+$color-primary-light: #5636CF;
+$color-primary-dark: #1D0A6D;
 
-// Font and Spacing Variables
-$font-size-base: 16px;
-$font-family-primary: 'Arial', sans-serif;
+$color-secondary: #61B38E;
+$color-secondary-light: #86C5A9;
+$color-secondary-dark: #3A755F;
+
+$color-accent: #F5A623;
+$color-accent-light: #FFD494;
+
+// Neutral Colors
+$color-white: #FFFFFF;
+$color-gray-light: #F7F7F7;
+$color-gray: #A1A1A1;
+$color-dark: #333333;
+
+// Font Families
+$font-sans: 'IBM Plex Sans', Arial, sans-serif;
+$font-serif: 'IBM Plex Serif', Georgia, serif;

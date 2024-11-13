@@ -1,0 +1,85 @@
+@use "../abstracts/" as *;
+
+// _banner.scss
+.banner {
+  padding: 4rem 0;
+  // background-color: $color-primary-light; // Using custom color variable directly
+
+  .badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: $color-secondary-light; // Using custom secondary color
+    color: $color-secondary;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: $font-sans; // Using custom font variable directly
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $color-dark; // Using custom neutral color
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-family: $font-sans;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+    color: $color-gray; // Using custom gray for subtitle
+    margin-bottom: 2rem;
+    font-family: $font-sans;
+  }
+
+  .banner-buttons {
+    display: flex;
+    gap: 1rem;
+
+    .btn-primary {
+      background-color: $color-primary; // Using custom primary color directly
+      color: $color-white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-family: $font-sans;
+    }
+
+    .btn-outline-secondary {
+      border: 2px solid $color-primary; // Outline matches custom primary color
+      color: $color-primary;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-family: $font-sans;
+    }
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .banner {
+    padding: 2rem 1rem;
+
+    .banner-title {
+      font-size: 2rem;
+    }
+
+    .banner-subtitle {
+      font-size: 0.9rem;
+    }
+
+    .banner-buttons {
+      flex-direction: column;
+      .btn-primary,
+      .btn-outline-secondary {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

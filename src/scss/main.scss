@@ -1,3 +1,7 @@
 // Import abstracts to access global variables, mixins, etc.
 @use "./abstracts" as *;
 @use "./vendors/" as *;
+@use "./pages/" as *;
+@use "./base/" as *;
+@use "./components/" as *;
+@use "./layout/" as *;

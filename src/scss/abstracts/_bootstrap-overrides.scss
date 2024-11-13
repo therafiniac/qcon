@@ -1,0 +1,14 @@
+// Import variables file for custom color palette and fonts
+@use "variables" as *;
+
+// Bootstrap Color Overrides
+$primary: $color-primary;
+$secondary: $color-secondary;
+$success: $color-secondary-light;
+$info: $color-primary-light;
+$warning: $color-accent;
+$danger: #d9534f; // Adjust to a contrasting color if needed
+
+// Bootstrap Font Overrides
+$font-family-sans-serif: $font-sans;
+$font-family-serif: $font-serif;
